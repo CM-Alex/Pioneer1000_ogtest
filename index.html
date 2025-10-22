@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="Pioneer 1000 10.25.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.png" shadow-intensity="2" exposure="0.95" shadow-softness="1" environment-image="legacy">
+      <button class="Hotspot" slot="hotspot-2" data-position="-0.34043873232895905m 0.5778784904750771m 0.1535048857191572m" data-normal="0.9027806223833643m 0.2310948311030489m -0.36274278336937116m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">INSTRUMENT PANEL &amp; CONTROLS</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="0.8339260488762223m 0.5630262983433838m 0.4407962601599227m" data-normal="-0.001460347707288888m 0.9395134471854457m -0.3425089049094848m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">BED LIGHT</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="0.24377016492521086m 0.8385627598481764m 0.4620465973308736m" data-normal="0.5790895673360774m -0.34500123742747346m -0.7386673264576055m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">REAR SLIDING WINDOW</div>
+      </button><button class="Hotspot" slot="hotspot-8" data-position="-0.08395267384158922m 0.4331891344681582m -0.20688638152924144m" data-normal="0.0922471371563562m 0.995691062196093m 0.009474932679046505m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">UNDER SEAT STORAGE</div>
+      </button><button class="Hotspot" slot="hotspot-9" data-position="-0.797294388301526m 0.5656209596698853m 0.027616617117668163m" data-normal="-0.6394227143922554m 0.7688014419449587m 0.009106875566998967m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">FUSE BOX</div>
+      </button><button class="Hotspot" slot="hotspot-10" data-position="-0.6422110148747504m 0.266315009139512m 0.09612594544887543m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">DUAL-CLUTCH TRANSMISSION</div>
+      </button><button class="Hotspot" slot="hotspot-11" data-position="-0.3149936810907228m 0.9850805056745178m -0.4154900143108329m" data-normal="-0.866565893104585m 0.49906265924644116m 0.00012269361722206122m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">GREEN GLASS WINDSHIELD</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
